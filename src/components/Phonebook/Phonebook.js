@@ -9,7 +9,7 @@ import s from './Phonebook.module.css';
 function Phonebook() {
   const [contacts, setContacts] = useLocalStorage('contacts', []);
 
-  const addContact = (name, phone) => {
+  const addContact = (name, number) => {
     const nameNormalized = name.toLowerCase();
 
     const dublicateContactByName = contacts.find(
@@ -24,7 +24,7 @@ function Phonebook() {
       ...prevState,
       {
         name: name,
-        phone: phone,
+        number: number,
         id: uuidv4(),
       },
     ]);

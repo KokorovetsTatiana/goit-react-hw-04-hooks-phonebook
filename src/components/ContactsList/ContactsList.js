@@ -28,10 +28,10 @@ export default function ContactsList({ contacts, stateContactsUpdate }) {
   };
 
   const filteredContactsShow = filteredContacts => {
-    return filteredContacts.map(({ id, name, phone }) => (
+    return filteredContacts.map(({ id, name, number }) => (
       <li key={id} className={s.Item}>
         <p className={s.Name}>{name}:</p>
-        <p className={s.Number}>{phone}</p>
+        <p className={s.Number}>{number}</p>
         <button id={id} onClick={deleteContact} className={s.Button}>
           Delete
         </button>

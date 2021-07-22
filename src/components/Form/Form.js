@@ -3,11 +3,11 @@ import { useState } from 'react';
 import s from './Form.module.css';
 export default function Form({ addContact }) {
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const resetState = () => {
     setName('');
-    setPhone('');
+    setNumber('');
   };
 
   const handleInputChange = ({ currentTarget }) => {
@@ -16,12 +16,12 @@ export default function Form({ addContact }) {
       setName(value);
       return;
     }
-    setPhone(value);
+    setNumber(value);
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-    addContact(name.trim(), phone.trim());
+    addContact(name.trim(), number.trim());
     resetState();
   };
 
@@ -47,8 +47,8 @@ export default function Form({ addContact }) {
           </label>
           <input
             type="tel"
-            name="phone"
-            value={phone}
+            name="number"
+            value={number}
             onChange={handleInputChange}
             className={s.Input}
             id="usernumber"
