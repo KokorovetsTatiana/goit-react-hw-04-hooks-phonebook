@@ -1,0 +1,26 @@
+.Item {
+  list-style: none;
+}
+
+.Item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.Name {
+  display: inline-block;
+  width: 150px;
+}
+
+.Number {
+  display: inline-block;
+  width: 100px;
+}
+
+.Button {
+  background-color: rgb(68, 19, 202);
+  color: #ffffff;
+  margin-top: 10px;
+  min-width: 80px;
+  margin-left: 20px;
+  border: 1px solid #868686;
+}

@@ -1,0 +1,36 @@
+.Form {
+  border: 1px solid #868686;
+  padding: 20px;
+}
+
+.List {
+  margin: 0;
+  padding: 0;
+}
+
+.Item {
+  list-style: none;
+}
+
+.buttonSubmit {
+  background-color: rgb(68, 19, 202);
+  color: #ffffff;
+  margin-top: 10px;
+  min-width: 100px;
+  border: 1px solid #868686;
+}
+
+.Label {
+  display: inline-block;
+  justify-content: space-between;
+  width: 55px;
+}
+
+.Label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.Input {
+  display: inline-block;
+  margin-left: 10px;
+}
