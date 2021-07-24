@@ -39,6 +39,7 @@ export default function Form({ addContact }) {
             onChange={handleInputChange}
             className={s.Input}
             id="username"
+            required
           />
         </li>
         <li className={s.Item}>
@@ -52,6 +53,7 @@ export default function Form({ addContact }) {
             onChange={handleInputChange}
             className={s.Input}
             id="usernumber"
+            required
           />
         </li>  
       </ul>
